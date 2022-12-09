@@ -3,5 +3,6 @@ public class TestCafe {
         CafeUtil cafeLogic = new CafeUtil();
         System.out.println(cafeLogic.greeting());
         System.out.println(cafeLogic.getStreakGoal());
+        System.out.println(cafeLogic.getStreakGoal(15));
     }
 }

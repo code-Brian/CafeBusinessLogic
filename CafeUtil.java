@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class CafeUtil {
     // Logic will go here :)
     public String greeting() {
@@ -11,5 +13,19 @@ public class CafeUtil {
             streakGoal += streakArray[i];
         }
         return streakGoal;
+    }
+
+    public int getStreakGoal(int weeks) {
+        int sum = 0;
+        ArrayList<Integer> streakArrayList = new ArrayList<Integer>();
+        for (int i = 0; i < weeks; i++) {
+            streakArrayList.add(i + 1);
+            System.out.println(streakArrayList.get(i));
+        }
+
+        for (int i = 0; i < streakArrayList.size(); i++) {
+            sum += streakArrayList.get(i);
+        }
+        return sum;
     }
 }
