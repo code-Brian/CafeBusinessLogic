@@ -13,5 +13,10 @@ public class TestCafe {
         menuList.add("Latte");
         menuList.add("Mocha");
         cafeLogic.displayMenu(menuList);
+        ArrayList<String> customers = new ArrayList<String>();
+        customers.add("Billy Bob");
+        customers.add("Jenna Rae");
+        customers.add("Susie Q");
+        cafeLogic.addCustomer(customers);
     }
 }

@@ -49,4 +49,13 @@ public class CafeUtil {
             System.out.println(menuItems.get(i));
         }
     }
+
+    public void addCustomer(ArrayList<String> customers) {
+        System.out.println("Please enter your name:");
+        String userName = System.console().readLine();
+        System.out.println("Hello, " + userName + "!");
+        customers.add(userName);
+        int queuePosition = customers.size() - 1;
+        System.out.println("There are " + queuePosition + " customer(s) in front of you!");
+    }
 }
