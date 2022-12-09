@@ -43,4 +43,10 @@ public class CafeUtil {
         }
         return orderTotal;
     }
+
+    public void displayMenu(ArrayList<String> menuItems) {
+        for(int i = 0; i < menuItems.size(); i++) {
+            System.out.println(menuItems.get(i));
+        }
+    }
 }
