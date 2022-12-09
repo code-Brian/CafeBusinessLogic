@@ -4,5 +4,7 @@ public class TestCafe {
         System.out.println(cafeLogic.greeting());
         System.out.println(cafeLogic.getStreakGoal());
         System.out.println(cafeLogic.getStreakGoal(15));
+        double[] order1 = {1.95, 1.05};
+        System.out.println(cafeLogic.getOrderTotal(order1));
     }
 }

@@ -28,4 +28,19 @@ public class CafeUtil {
         }
         return sum;
     }
+
+    public double getOrderTotal(double[] prices) {
+        double orderTotal = 0.0;
+        ArrayList<Double> orderTotalArrayList = new ArrayList<Double>();
+
+        for (int i = 0; i < prices.length; i++) {
+            orderTotalArrayList.add(prices[i]);
+            System.out.println(orderTotalArrayList.get(i));
+        }
+
+        for (int i = 0; i < orderTotalArrayList.size(); i++) {
+            orderTotal += orderTotalArrayList.get(i);
+        }
+        return orderTotal;
+    }
 }
